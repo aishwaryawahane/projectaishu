@@ -48,6 +48,16 @@ def clean_data(data):
     return data
 
 
+    def try_me():
+        terminator = input("Do you know what was to happen on August 29, 1997?")
+        if terminator.lower() == 'yes':
+            print("Run! Cyborg T2 is coming!!")
+        elif terminator.lower() == 'no':
+            print("You must talk to John Connor. He can save you")
+        else:
+            print("Skynet is activating...2.0 percent remaining")
+
+
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
     import projectaishu

@@ -8,7 +8,8 @@ import pandas as pd
 
 # Import from projectaishu
 import projectaishu
-from projectaishu.lib import clean_data
+from projectaishu.lib import clean_data, try_me
+
 
 if __name__ == '__main__':
     usage = '%(prog)s'
@@ -21,6 +22,7 @@ if __name__ == '__main__':
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
     print('  projectaishu/data/data.csv.gz Loaded')
 
+    try_me()
     res = clean_data(df)
     res.to_csv('out.csv', index=False)
     print('==> out.csv MADE ')
